@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { string } from 'prop-types';
 
 // Config
 import { YT_VIDEOS } from '../../config';
@@ -19,13 +18,14 @@ const VideoPanel = () => {
     <div className="video-panel">
       {videoId ? (
         <iframe
-          width="100%"
-          height="350"
-          src={`${YT_VIDEOS}/${videoId}`}
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           autoplay="1"
+          frameBorder="0"
+          height="350"
+          src={`${YT_VIDEOS}/${videoId}`}
+          title="YT Video Selected"
+          width="100%"
         />
       ) : (
         <div className="select-video">
