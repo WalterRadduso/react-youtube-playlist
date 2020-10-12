@@ -1,12 +1,24 @@
-.Home {
-  align-items: center;
-  background-color: $bg-color;
-  display: flex;
-  height: 60px;
-  justify-content: center;
+.home-page {
+  .home-page-header {
+    align-items: center;
+    background-color: $bg-color;
+    height: 60px;
 
-  p {
-    color: white;
-    font-size: calc(10px + 2vmin);
+    h4 {
+      color: white;
+      font-size: 2em;
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+
+  .page-divider {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    .divider-line {
+      height: 100%;
+    }
   }
 }

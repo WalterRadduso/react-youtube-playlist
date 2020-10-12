@@ -8,9 +8,11 @@
     "url": "https://walterradduso.github.io/"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.2.2",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.7.0",
     "axios": "^0.20.0",
     "classnames": "^2.2.6",
     "node-sass": "^4.14.1",

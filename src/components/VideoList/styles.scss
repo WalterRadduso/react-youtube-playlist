@@ -1,0 +1,14 @@
+.video-list {
+  padding: 10px;
+
+  .video-list-item {
+    margin-bottom: 10px;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .video-list {
+    padding: 0 10px 10px 10px;
+  }
+}
