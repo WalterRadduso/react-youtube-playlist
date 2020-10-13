@@ -10,17 +10,17 @@ import VideoList from '../VideoList';
 
 const LeftPanel = () => {
   const {
-    state: { loading, videos },
+    state: { loading, searchingVideos, videos },
   } = useContext(HomeContext);
 
   const leftPanelClassname = classNames({
-    'left-panel-loading': loading,
+    'left-panel-loading': loading || searchingVideos,
     'left-panel': !loading,
   });
 
   return (
     <div className={leftPanelClassname}>
-      {loading ? <Loader message="Loading..." /> : <VideoList {...videos} />}
+      {loading || searchingVideos ? <Loader message="Loading..." /> : <VideoList {...videos} />}
     </div>
   );
 };

@@ -6,6 +6,7 @@ import { HomeProvider } from '../../contexts/Home';
 // Components
 import LeftPanel from '../../components/LeftPanel';
 import RightPanel from '../../components/RightPanel';
+import SearchVideo from '../../components/SearchVideo';
 
 // Ant Design
 import { Col, Row } from 'antd';
@@ -20,11 +21,15 @@ const HomePage = () => (
       </Row>
 
       <Row>
-        <Col xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 0 }}>
+        <Col xs={{ span: 24, order: 0 }}>
+          <SearchVideo />
+        </Col>
+
+        <Col xs={{ span: 24, order: 2 }} sm={{ span: 24, order: 2 }} md={{ span: 12, order: 1 }}>
           <LeftPanel />
         </Col>
 
-        <Col xs={{ span: 24, order: 0 }} sm={{ span: 24, order: 0 }} md={{ span: 12, order: 1 }}>
+        <Col xs={{ span: 24, order: 1 }} sm={{ span: 24, order: 1 }} md={{ span: 12, order: 2 }}>
           <RightPanel />
         </Col>
       </Row>
